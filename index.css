@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header starts*/
+
+.navigation li{
+    list-style: none;
+    
+}
+.header .container{
+    display: flex;
+
+}
+.logo {
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    aspect-ratio: 2/1.5;
+    object-fit: cover;
+   
+}
+.navigation li a{
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+    font-weight: 600;
+
+}
+.navigation li {
+    padding: 15px;
+}
+.header{
+    background-color: rgb(213, 221, 224);
+    position: sticky;
+    top: 0;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: unset;
+}
+
+/* body start */
+.search {
+    padding: 20px;
+}
+.search input {
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+  
+}
+button#search-item-btn {
+    padding: 5px 25px;
+    border-radius: 20px;
+    background: lightblue;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+.restaurant-container {
+    width: 25%;
+    padding:2px;
+    margin: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
+
+    border-radius: 10px;
+}
+.restaurant-container:hover{
+    border: 1px solid #999;
+    cursor: pointer;
+}
+.restaurant-card img{
+    border-radius: 10px 10 0 0;
+}
+.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    font-size:15px;
+    color:#999;
+
+}
+.cardBody {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.start-rating {
+    border: 2px solid #3c2edd;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    color: #ffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px
+}
+.deliverTime {
+    font-size: 20px;
+    color: #999;
+}
