@@ -62,15 +62,22 @@ img {
     margin-right: 20px;
     border-radius: 20px;
     font-size: 20px;
+    border:none;
   
 }
+.search input:hover{
+    border:1px solid #999;
+}
 button#search-item-btn {
-    padding: 5px 25px;
+    padding: 10px 25px;
     border-radius: 20px;
     background: lightblue;
     font-size: 20px;
     color: white;
     font-weight: 600;
+    border:none;
+    cursor: pointer;
+
 }
 .restaurant-container {
     width: 25%;
@@ -124,4 +131,17 @@ button#search-item-btn {
 .deliverTime {
     font-size: 20px;
     color: #999;
+}
+button.topRatedRestaurant {
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.searchContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
