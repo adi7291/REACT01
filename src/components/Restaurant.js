@@ -2,11 +2,11 @@ import CardComponent from "./CardComponent";
 // //importing mock data
 // import {restData} from '../utils/mockData';
 
-const Restaurant = ({restDatas}) => {
-  
+const Restaurant = ({restProps}) => {
+  // console.log(restProps)
     return (
       <div className='cardBody'>
-      { restDatas.map((item) => <CardComponent  key={item.id} data={item} />)}
+       {restProps.length>0 && restProps.map((restItem=><CardComponent key={restItem.id} restItem={restItem}/>))  ||<div>No matching Restaurant Found</div>}
       </div>
     );
   };

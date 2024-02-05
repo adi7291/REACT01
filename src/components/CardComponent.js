@@ -1,9 +1,10 @@
 
-const CardComponent = (props) => {
-    const {id, name,imageUrl  ,rating, deliveryTime}=props.data;
+const CardComponent = ({restItem}) => {
+  
+    const {id, name,imageUrl  ,rating, deliveryTime}=restItem;
     
     return (
-      <div className="restaurant-container" key={id}>
+      <div className="restaurant-container">
         <div className="restaurant-card">
           <img
             alt="restMeghana"
