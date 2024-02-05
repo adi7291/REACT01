@@ -1,12 +1,10 @@
 export const SearchComponent = ({ onFilter }) => {
   
-//   const filterItem = () => {
-//     onFilter((prevData) => {console.log(prevData)
-//         prevData.filter((item) =>(item.rating>4.5) );
-    
-//         onFilter()
-//     });
-//   };
+const filterFromChild=()=>{
+    // console.log("childClicked")
+    // onFilter(data="RAM")
+    onFilter(prevData=>prevData.filter(item=>item.rating>4.5))
+}
   return (
     <div className="searchContainer">
       <div className="search">
@@ -17,7 +15,13 @@ export const SearchComponent = ({ onFilter }) => {
         />
         <button id="search-item-btn">Search</button>
       </div>
-      <button className="topRatedRestaurant" onClick={onFilter}>
+      {/* we are just calling that props function passed from the parent component */}
+      {/* <button className="topRatedRestaurant" onClick={onFilter}>
+        Top Rated Restaurant
+      </button> */}
+
+      {/* Here we want to create the eventhandler to the child Component and  */}
+      <button className="topRatedRestaurant" onClick={filterFromChild}>
         Top Rated Restaurant
       </button>
     </div>
