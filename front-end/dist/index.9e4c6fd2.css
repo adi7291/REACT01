@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.header .container {
+  display: flex;
+}
+
+.logo {
+  align-items: center;
+  width: 100px;
+  display: flex;
+}
+
+img {
+  aspect-ratio: 2 / 1.5;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.navigation li a {
+  color: #000;
+  font-size: 23px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navigation li {
+  padding: 15px;
+}
+
+.header {
+  background-color: #d5dde0;
+  position: sticky;
+  top: 0;
+}
+
+.header .container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.navigation ul {
+  align-items: center;
+  justify-content: unset;
+  flex-direction: row;
+  display: flex;
+}
+
+.search {
+  padding: 20px;
+}
+
+.search input {
+  border: none;
+  border-radius: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.search input:hover {
+  border: 1px solid #999;
+}
+
+button#search-item-btn {
+  color: #fff;
+  cursor: pointer;
+  background: #add8e6;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.restaurant-container {
+  border-radius: 10px;
+  width: 25%;
+  margin: 20px;
+  padding: 2px;
+  box-shadow: 0 10px 15px -3px #0000001a;
+}
+
+.restaurant-container:hover {
+  cursor: pointer;
+  border: 1px solid #999;
+}
+
+.restaurant-card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+  color: #999;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
+}
+
+.cardBody {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.start-rating {
+  color: #fff;
+  background-color: #00f;
+  border: 2px solid #3c2edd;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+}
+
+.card-middle {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  display: flex;
+}
+
+.deliverTime {
+  color: #999;
+  font-size: 20px;
+}
+
+button.topRatedRestaurant {
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  margin-right: 20px;
+  padding: 10px 25px;
+  font-size: 20px;
+}
+
+.searchContainer {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.9e4c6fd2.css.map */

@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
+import axios from 'axios'
 
 import Restaurant from "./Restaurant";
 import { SearchComponent } from "./SearchComponent";// it is called named import of component.
@@ -8,7 +9,13 @@ import {restData} from '../utils/mockData';
 
 const Body = () => {
 
-  const [mockData , setMockData]=useState(restData)
+  const [mockData , setMockData]=useState([])
+
+  useEffect(()=>{
+     axios.get("/api/restaurants")
+     .then((res)=>{console.log(res)})
+     .catch((error)=>console.log(error))
+  },[])
   
   const handleTopRated=(abc)=>{
     // console.log("body component called")
